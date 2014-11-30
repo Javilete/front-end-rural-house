@@ -4,12 +4,18 @@
 
 <html>
     <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-        <script src="@routes.Assets.at("javascripts/mains.js")" type="text/javascript"></script>
+
+        <!--<script src='@routes.Assets.at("/public/javascripts" , "requireJsConfigBuilder.js")'></script>-->
+        <base href="/">
     </head>
     <body>
+        <h2>casa rural</h2>
+        <h1>"las golondrinas"</h1>
         @content
+        <script src='@routes.Assets.at("/public/javascripts", "requireJsConfigBuilder.js")'></script>
+        <script data-main='@routes.Assets.at("/public/javascripts", "main")' src='@routes.Assets.at("/public/javascripts", "lib/requirejs/require.js")'></script>
     </body>
 </html>
