@@ -1,16 +1,18 @@
 require.config(buildRequireConfig());
 
 require([
+        'jquery',
         'angular',
         'angularUIStates',
-        'jquery'
+
+        'application/home/rhHomeModule'
     ],
     function ($, angular) {
+        console.log('bootstrapping');
 
         angular.element(document).ready(function () {
             angular.bootstrap(document, [
-                'rhApp'
+                'rh.home'
             ]);
-
         });
     });
