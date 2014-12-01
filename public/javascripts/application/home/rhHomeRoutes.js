@@ -4,7 +4,7 @@ define([
     function() {
 
         var rhHomeRoutes = function($stateProvider, $locationProvider){
-            $locationProvider.html5Mode(true);
+            //$locationProvider.html5Mode(true);
 
             $stateProvider
                 .state('home',{
@@ -32,7 +32,7 @@ define([
                     url: '/getThere',
                     templateUrl: 'partials/home/getThere',
                     controller: 'rhGetThereController'
-                })
+                });
         }
 
         rhHomeRoutes.$inject = ['$stateProvider', '$locationProvider'];
