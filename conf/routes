@@ -12,10 +12,18 @@ GET         /assets/javascripts/*file                                           
 GET         /assets/html/*file                                                              controllers.Assets.at(path="/public/html", file)
 GET         /assets/sass/*file                                                              controllers.Assets.at(path="/public/sass", file)
 
+# Html files for main
+GET         /partials/main/panel                                                            controllers.Application.main()
+
 # Html files for home
-GET         /partials/home/main                                                              controllers.Application.homeMain()
+GET         /partials/home/main                                                              controllers.Application.home()
 GET         /partials/home/features                                                          controllers.Application.homeFeatures()
 GET         /partials/home/pictures                                                          controllers.Application.homePictures()
 GET         /partials/home/booking                                                           controllers.Application.homeBooking()
 GET         /partials/home/getThere                                                          controllers.Application.homeGetThere()
 
+# Html files for routes
+
+# Html files for comments
+
+# Html files for contact

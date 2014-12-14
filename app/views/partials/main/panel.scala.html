@@ -1,0 +1,46 @@
+@()
+
+
+<ul>
+    <li>
+        <a data-ng-click="setLanguage('en')" data-translate="link_lang_en"></a>
+    </li>
+    <li>
+        <a data-ng-click="setLanguage('es')" data-translate="link_lang_es"></a>
+    </li>
+</ul>
+<nav>
+    <ul>
+        <li id="home" data-ng-click="goToHome()">
+            <a data-translate="menu.0.key"></a>
+            <p data-translate="menu.0.sub_info"></p>
+        </li>
+        <li id="routes" data-ng-click="goToRoutes()">
+            <a data-translate="menu.1.key"></a>
+            <p data-translate="menu.1.sub_info"></p>
+        </li>
+        <li id="comments">
+            <a data-translate="menu.2.key"></a>
+            <p data-translate="menu.2.sub_info"></p>
+        </li>
+        <li id="contact">
+            <a data-translate="menu.3.key"></a>
+            <p data-translate="menu.3.sub_info"></p>
+        </li>
+    </ul>
+</nav>
+<aside>
+    <p>
+        <span>Casa rural "Las Golondrinas"</span>
+        <span>C/ Caniego, 7</span>
+        <span>C.P. 02630 Villalgordo del Júcar</span>
+        <span>Albacete (España)</span>
+        <span>Telefonos:</span>
+    <p/>
+    <ul>
+        <li>ES: (+34) 629140953</li>
+        <li>UK: (+44) 7412913632</li>
+    </ul>
+</aside>
+
+<div ui-view></div>

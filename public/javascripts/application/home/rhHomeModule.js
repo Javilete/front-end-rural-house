@@ -1,10 +1,17 @@
 define([
-        'angular',
-        './rhHomeRoutes',
-        './rhHomeController',
-        './rhFeaturesController'
+        'angular'
+        , './rhHomeRoutes'
+        , './rhHomeController'
+        , './rhFeaturesController'
+        , './rhBookingController'
     ],
-    function (angular, rhHomeRoutes, rhHomeController, rhFeaturesController) {
+    function (
+        angular
+        , rhHomeRoutes
+        , rhHomeController
+        , rhFeaturesController
+        , rhBookingController
+    ) {
 
         var rhHomeModule = angular.module('rh.home', ['ui.router'] );
 
@@ -12,6 +19,7 @@ define([
 
         rhHomeModule.controller('rhHomeController', rhHomeController);
         rhHomeModule.controller('rhFeaturesController', rhFeaturesController);
+        rhHomeModule.controller('rhBookingController', rhBookingController);
 
         return rhHomeModule;
     }

@@ -10,6 +10,7 @@ define([
                 .state('home',{
                     abstract: true,
                     url: '/home',
+                    parent: 'main',
                     templateUrl: 'partials/home/main',
                     controller: 'rhHomeController'
                 })

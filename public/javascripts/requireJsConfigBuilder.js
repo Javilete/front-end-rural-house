@@ -6,6 +6,7 @@ var buildRequireConfig = function() {
             'jquery': 'lib/jquery/dist/jquery.min',
             'angular': 'lib/angular/angular.min',
             'angularUIStates': 'lib/angular-ui-router/release/angular-ui-router.min',
+            'angularTranslate': 'lib/angular-translate/angular-translate.min',
 
             'rhApp': 'application'
         },
@@ -14,7 +15,8 @@ var buildRequireConfig = function() {
                 'deps': ['jquery'],
                 'exports': 'angular'
             },
-            'angularUIStates': ['angular']
+            'angularUIStates': ['angular'],
+            'angularTranslate': ['angular']
         },
         priority: ['angular'],
         baseUrl : "/assets/javascripts"

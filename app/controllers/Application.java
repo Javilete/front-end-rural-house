@@ -10,8 +10,13 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
+    /*********************  MAIN ******************************/
+    public static Result main() {
+        return ok(views.html.partials.main.panel.render());
+    }
+
 /*********************  HOME ******************************/
-    public static Result homeMain() {
+    public static Result home() {
         return ok(views.html.partials.home.main.render());
     }
 
@@ -20,15 +25,15 @@ public class Application extends Controller {
     }
 
     public static Result homePictures() {
-        return ok();
+        return ok(views.html.partials.home.pictures.render());
     }
 
     public static Result homeBooking() {
-        return ok();
+        return ok(views.html.partials.home.booking.render());
     }
 
     public static Result homeGetThere() {
-        return ok();
+        return ok(views.html.partials.home.getThere.render());
     }
 /********************* END HOME ******************************/
 }
