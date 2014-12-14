@@ -74,7 +74,7 @@ define([],
                             find_button: 'Find'
                         },
                         {
-                            key: 'Get there'
+                            key: 'How to get there'
                         }
                     ]
                 },

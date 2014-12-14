@@ -17,10 +17,12 @@
         <label for="guests">
             {{ 'menu.0.sub_menu.2.guests' | translate}}
         </label>
-        <select id="guests" data-ng-model="guestNumber" data-ng-options="guest.value for guest in guests">
+
+        <select id="guests" name="guests" data-ng-model="guestNumber" data-ng-options="guest.value for guest in guests">
             <option value="">-- {{ 'menu.0.sub_menu.2.guests' | translate | lowercase}} --</option>
         </select>
 
+        <button id="findButton" data-ng-click="">{{ 'menu.0.sub_menu.2.find_button' | translate}}</button>
     </form>
 
 </div>
