@@ -6,23 +6,31 @@
 GET     /                           controllers.Application.index()
 
 # Map static resources from the /public folder to the /assets URL path
-GET         /assets/images/*file                                                            controllers.Assets.at(path="/public/images", file)
-GET         /assets/stylesheets/*file                                                       controllers.Assets.at(path="/public/stylesheets", file)
-GET         /assets/javascripts/*file                                                       controllers.Assets.at(path="/public/javascripts", file)
-GET         /assets/html/*file                                                              controllers.Assets.at(path="/public/html", file)
-GET         /assets/sass/*file                                                              controllers.Assets.at(path="/public/sass", file)
+GET         /assets/images/*file                            controllers.Assets.at(path="/public/images", file)
+GET         /assets/stylesheets/*file                       controllers.Assets.at(path="/public/stylesheets", file)
+GET         /assets/javascripts/*file                       controllers.Assets.at(path="/public/javascripts", file)
+GET         /assets/html/*file                              controllers.Assets.at(path="/public/html", file)
+GET         /assets/sass/*file                              controllers.Assets.at(path="/public/sass", file)
 
 # Html files for main
-GET         /partials/main/panel                                                            controllers.Application.main()
+GET         /partials/main/panel                            controllers.Application.main()
 
 # Html files for home
-GET         /partials/home/main                                                              controllers.Application.home()
-GET         /partials/home/features                                                          controllers.Application.homeFeatures()
-GET         /partials/home/pictures                                                          controllers.Application.homePictures()
-GET         /partials/home/booking                                                           controllers.Application.homeBooking()
-GET         /partials/home/getThere                                                          controllers.Application.homeGetThere()
+GET         /partials/home/main                             controllers.Application.home()
+GET         /partials/home/features                         controllers.Application.homeFeatures()
+GET         /partials/home/pictures                         controllers.Application.homePictures()
+GET         /partials/home/booking                          controllers.Application.homeBooking()
+GET         /partials/home/getThere                         controllers.Application.homeGetThere()
 
 # Html files for routes
+GET         /partials/routes/main                           controllers.Application.routes()
+GET         /partials/routes/route0                         controllers.Application.routesRoute0()
+GET         /partials/routes/route1                         controllers.Application.routesRoute1()
+GET         /partials/routes/route2                         controllers.Application.routesRoute2()
+GET         /partials/routes/route3                         controllers.Application.routesRoute3()
+GET         /partials/routes/route4                         controllers.Application.routesRoute4()
+GET         /partials/routes/route5                         controllers.Application.routesRoute5()
+GET         /partials/routes/route6                         controllers.Application.routesRoute6()
 
 # Html files for comments
 

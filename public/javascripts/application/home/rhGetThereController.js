@@ -10,8 +10,10 @@ define([
                     $scope.map = {
                         center: {
                             latitude: -34.397,
-                            longitude: 150.644 },
-                        zoom: 8
+                            longitude: 150.644
+                        },
+                        zoom: 8,
+                        mapTypeId: maps.MapTypeId.ROADMAP
                     };
                 }
             )

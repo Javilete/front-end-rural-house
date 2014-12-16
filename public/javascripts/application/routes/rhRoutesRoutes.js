@@ -11,29 +11,36 @@ define([
                     abstract: true,
                     url: '/routes',
                     parent: 'main',
-                    templateUrl: 'partials/routes/main',
-                    controller: 'rhRoutesController'
+                    templateUrl: 'partials/routes/main'
+                })
+                .state('routes.route0', {
+                    url: '/route0',
+                    templateUrl: 'partials/routes/route0'
                 })
                 .state('routes.route1', {
                     url: '/route1',
-                    templateUrl: 'partials/routes/route1',
-                    controller: 'rhRoute1Controller'
+                    templateUrl: 'partials/routes/route1'
+                })
+                .state('routes.route2', {
+                    url: '/route2',
+                    templateUrl: 'partials/routes/route2'
+                })
+                .state('routes.route3', {
+                    url: '/route3',
+                    templateUrl: 'partials/routes/route3'
+                })
+                .state('routes.route4', {
+                    url: '/route4',
+                    templateUrl: 'partials/routes/route4'
+                })
+                .state('routes.route5', {
+                    url: '/route5',
+                    templateUrl: 'partials/routes/route5'
+                })
+                .state('routes.route6', {
+                    url: '/route6',
+                    templateUrl: 'partials/routes/route6'
                 });
-//                .state('routes.pictures', {
-//                    url: '/pictures',
-//                    templateUrl: 'partials/routes/pictures',
-//                    controller: 'rhPicturesController'
-//                }).
-//                state('routes.booking', {
-//                    url: '/booking',
-//                    templateUrl: 'partials/routes/booking',
-//                    controller: 'rhBookingController'
-//                }).
-//                state('routes.getThere', {
-//                    url: '/getThere',
-//                    templateUrl: 'partials/routes/getThere',
-//                    controller: 'rhGetThereController'
-//                });
         }
 
         rhRoutesRoutes.$inject = ['$stateProvider', '$locationProvider'];

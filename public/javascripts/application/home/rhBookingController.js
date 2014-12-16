@@ -19,7 +19,12 @@ define(
                 {name: 'ten', value: 10},
                 {name: 'eleven', value: 11},
                 {name: 'twelve', value: 12}
-            ]
+            ];
+
+            $scope.find = function() {
+                console.log("Arrival: " + $scope.arrivalDate);
+                console.log("Departing: " + $scope.arrivalDate);
+            }
 
         }
 

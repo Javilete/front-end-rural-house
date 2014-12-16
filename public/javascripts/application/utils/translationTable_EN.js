@@ -81,9 +81,15 @@ define([],
                 {
                     key: 'Routes (plans)',
                     sub_info: 'Routes in the area',
-                    sub_menu: {
-
-                    }
+                    sub_menu: [
+                        {
+                            key: 'Gonsalvez Palace',
+                            title: 'Surroundings of Gonsalvez Palace',
+                            description_1: 'En sus inmediaciones se repartían las arquitecturas industriales de las fábricas, los jardines con sus elementos de recreo, las viviendas de sus empleados, la ermita de Santiago Apóstol y toda una serie de inmuebles que en conjunto conformaban El Puente de Don Juan.',
+                            description_2: 'Partiendo de "Las Golondrinas", dirección La Roda, al pasar el puente de Don Juan, cogemos el primer camino de la izquierda y nos encontramos con el Palacio de los Gosalvez.',
+                            distance: '1.5 km'
+                        }
+                    ]
                 },
                 {
                     key: 'Comments',

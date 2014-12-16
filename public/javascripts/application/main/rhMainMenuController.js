@@ -14,7 +14,7 @@ define([
             }
 
             $scope.goToRoutes = function() {
-                $state.go('routes.route1');
+                $state.go('routes.route0');
             }
 
         }
