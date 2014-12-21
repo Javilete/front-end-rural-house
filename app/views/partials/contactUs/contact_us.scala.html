@@ -1,0 +1,45 @@
+@()
+
+<h2>
+    {{ 'menu.3.sub_menu.0.title' | translate }}
+</h2>
+
+<div>
+    <p>
+        {{ 'menu.3.sub_menu.0.description_1' | translate }}
+    </p>
+</div>
+
+<form name="contactForm">
+    <label for="name">
+        {{ 'menu.3.sub_menu.0.name' | translate }}
+    </label>
+    <input type="text" name="name" id="name" data-ng-model="name" />
+
+    <label for="surname">
+        {{ 'menu.3.sub_menu.0.surname' | translate }}
+    </label>
+    <input type="text" name="surname" id="surname" data-ng-model="surname" />
+
+    <label for="email">
+        {{ 'menu.3.sub_menu.0.email' | translate }}
+    </label>
+    <input type="email" name="email" id="email" data-ng-model="email" />
+
+    <label for="city">
+        {{ 'menu.3.sub_menu.0.city' | translate }}
+    </label>
+    <input type="text" name="city" id="city" data-ng-model="city"/>
+
+    <label for="country">
+        {{ 'menu.3.sub_menu.0.country' | translate }}
+    </label>
+    <input type="country" name="country" id="country" data-ng-model="country"/>
+
+    <label for="text">
+        {{ 'menu.3.sub_menu.0.text' | translate }}
+    </label>
+    <textarea name="text" id="text" data-ng-model="text"></textarea>
+
+    <button id="send" data-ng-click="send()">{{ 'menu.3.sub_menu.0.send_button' | translate}}</button>
+</form>

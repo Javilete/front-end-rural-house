@@ -17,6 +17,14 @@ define([
                 $state.go('routes.route0');
             }
 
+            $scope.goToComments = function() {
+                $state.go('comments.main')
+            }
+
+            $scope.goToContactUs = function() {
+                $state.go('contactUs.main')
+            }
+
         }
 
         rhMainMenuController.$inject = ['$scope', '$state', '$translate'];

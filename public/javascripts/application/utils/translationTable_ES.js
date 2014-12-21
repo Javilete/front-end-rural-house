@@ -3,6 +3,13 @@ define([],
         var translationTabale_ES = {
             link_lang_en: 'Inglés',
             link_lang_es: 'Español',
+            contact_info: {
+                name: 'Casa Rural',
+                address: 'C/ Caniego, 7',
+                postal_code: 'C.P. 02630 Villalgordo del Júcar',
+                location: 'Albacete (España)',
+                phones: 'Phones:'
+            },
             menu:[
                 {
                     key: 'La Casa',
@@ -133,16 +140,28 @@ define([],
                 {
                     key: 'Comentarios',
                     sub_info: 'Comentarios de los visitantes',
-                    sub_menu: {
-
-                    }
+                    sub_menu: [
+                        {
+                            title: 'Comentarios de los visitantes'
+                        }
+                    ]
                 },
                 {
                     key: 'Contacto',
                     sub_info: 'Informaction de contacto',
-                    sub_menu: {
-
-                    }
+                    sub_menu: [
+                        {
+                            title: 'Contacta con nosotros',
+                            description_1: 'Si quieres ponerte en contacto con nosotros, o mandarnos cualquier sugerencia, envíanos un email a golondrinasrh@gmail.com o rellena el siguiente formulario: ',
+                            name: 'Nombre:',
+                            surname: 'Apellidos:',
+                            email: 'Email:',
+                            city: 'Ciudad:',
+                            country: 'Pais:',
+                            text: 'Texto:',
+                            send_button: 'Enviar'
+                        }
+                    ]
                 }
             ]
         }

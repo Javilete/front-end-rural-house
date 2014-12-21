@@ -11,6 +11,8 @@ require([
         , 'application/main/rhMainModule'
         , 'application/home/rhHomeModule'
         , 'application/routes/rhRoutesModule'
+        , 'application/contactUs/rhContactUsModule'
+        , 'application/comments/rhCommentsModule'
     ],
     function ($, angular) {
         console.log('booooootstrapping');
@@ -20,6 +22,8 @@ require([
                   'rh.main'
                 , 'rh.home'
                 , 'rh.routes'
+                , 'rh.contactUs'
+                , 'rh.comments'
             ]);
         });
     });

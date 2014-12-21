@@ -16,14 +16,14 @@ GET         /assets/sass/*file                              controllers.Assets.a
 GET         /partials/main/panel                            controllers.Application.main()
 
 # Html files for home
-GET         /partials/home/main                             controllers.Application.home()
+GET         /partials/home/main                             controllers.Application.homeMain()
 GET         /partials/home/features                         controllers.Application.homeFeatures()
 GET         /partials/home/pictures                         controllers.Application.homePictures()
 GET         /partials/home/booking                          controllers.Application.homeBooking()
 GET         /partials/home/getThere                         controllers.Application.homeGetThere()
 
 # Html files for routes
-GET         /partials/routes/main                           controllers.Application.routes()
+GET         /partials/routes/main                           controllers.Application.routesMain()
 GET         /partials/routes/route0                         controllers.Application.routesRoute0()
 GET         /partials/routes/route1                         controllers.Application.routesRoute1()
 GET         /partials/routes/route2                         controllers.Application.routesRoute2()
@@ -33,5 +33,9 @@ GET         /partials/routes/route5                         controllers.Applicat
 GET         /partials/routes/route6                         controllers.Application.routesRoute6()
 
 # Html files for comments
+GET         /partials/comments/main                         controllers.Application.commentsMain()
+GET         /partials/comments/comments                     controllers.Application.comments()
 
 # Html files for contact
+GET         /partials/contactUs/main                         controllers.Application.contactUsMain()
+GET         /partials/contactUs/contactUs                    controllers.Application.contactUs()

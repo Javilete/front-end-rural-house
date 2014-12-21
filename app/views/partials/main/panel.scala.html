@@ -11,31 +11,31 @@
 </ul>
 <nav>
     <ul>
-        <li id="home" data-ng-click="goToHome()">
-            <a data-translate="menu.0.key"></a>
+        <li id="home">
+            <a data-ng-click="goToHome()" data-translate="menu.0.key"></a>
             <p data-translate="menu.0.sub_info"></p>
         </li>
-        <li id="routes" data-ng-click="goToRoutes()">
-            <a data-translate="menu.1.key"></a>
+        <li id="routes">
+            <a data-ng-click="goToRoutes()" data-translate="menu.1.key"></a>
             <p data-translate="menu.1.sub_info"></p>
         </li>
         <li id="comments">
-            <a data-translate="menu.2.key"></a>
+            <a data-ng-click="goToComments()" data-translate="menu.2.key"></a>
             <p data-translate="menu.2.sub_info"></p>
         </li>
         <li id="contact">
-            <a data-translate="menu.3.key"></a>
+            <a data-ng-click="goToContactUs()" data-translate="menu.3.key"></a>
             <p data-translate="menu.3.sub_info"></p>
         </li>
     </ul>
 </nav>
 <aside>
     <p>
-        <span>Casa rural "Las Golondrinas"</span>
-        <span>C/ Caniego, 7</span>
-        <span>C.P. 02630 Villalgordo del Júcar</span>
-        <span>Albacete (España)</span>
-        <span>Telefonos:</span>
+        <span>{{ 'contact_info.name' | translate }} "Las Golondrinas"</span>
+        <span>{{ 'contact_info.address' | translate }}</span>
+        <span>{{ 'contact_info.postal_code' | translate }}</span>
+        <span>{{ 'contact_info.location' | translate }}</span>
+        <span>{{ 'contact_info.phones' | translate }}</span>
     <p/>
     <ul>
         <li>ES: (+34) 629140953</li>

@@ -16,7 +16,7 @@ public class Application extends Controller {
     }
 
     /*********************  HOME ******************************/
-    public static Result home() {
+    public static Result homeMain() {
         return ok(views.html.partials.home.main.render());
     }
 
@@ -39,7 +39,7 @@ public class Application extends Controller {
 
     /*********************  ROUTES ******************************/
 
-    public static Result routes() {
+    public static Result routesMain() {
         return ok(views.html.partials.routes.main.render());
     }
 
@@ -72,4 +72,33 @@ public class Application extends Controller {
     }
 
     /*********************  END ROUTES ******************************/
+
+    /*********************  COMMENTS ******************************/
+
+    public static Result commentsMain() {
+
+        return ok(views.html.partials.comments.main.render());
+    }
+
+    public static Result comments() {
+
+        return ok(views.html.partials.comments.comments.render());
+    }
+
+    /******************* END  COMMENTS ****************************/
+
+
+    /*********************  CONTACT-US ******************************/
+
+    public static Result contactUsMain() {
+
+        return ok(views.html.partials.contactUs.main.render());
+    }
+
+    public static Result contactUs() {
+
+        return ok(views.html.partials.contactUs.contact_us.render());
+    }
+
+    /******************* END  CONTACT-US ****************************/
 }
