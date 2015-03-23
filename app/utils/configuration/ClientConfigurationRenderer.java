@@ -1,6 +1,6 @@
 package utils.configuration;
 
-import com.oracle.javafx.jmx.json.JSONException;
+import org.codehaus.jettison.json.JSONException;
 import play.Play;
 
 import java.util.Map;

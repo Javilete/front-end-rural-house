@@ -2,7 +2,7 @@ package utils.configuration;
 
 import java.util.ArrayList;
 import java.util.Map;
-
+import org.codehaus.jettison.json.*;
 
 public class ConfigurationToJsonConverter {
     private static final int MAX_CONFIG_DEPTH = 10;
