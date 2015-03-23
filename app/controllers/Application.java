@@ -78,6 +78,7 @@ public class Application extends Controller {
     public static Result commentsMain() {
 
         return ok(views.html.partials.comments.main.render());
+
     }
 
     public static Result comments() {

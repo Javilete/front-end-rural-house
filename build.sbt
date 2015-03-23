@@ -2,15 +2,13 @@ import play.PlayJava
 
 name := "front-end-rural-house"
 
-version := "1.0-SNAPSHOT"
+organization := "com.rural.house"
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
+version := "0.1.0"
 
-scalaVersion := "2.11.1"
+scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
-  javaJdbc,
-  javaEbean,
-  cache,
-  javaWs
+  "com.google.code.gson" % "gson" % "2.3.1",
+  "org.codehaus.jettison" % "jettison" % "1.1"
 )
