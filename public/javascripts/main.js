@@ -6,7 +6,7 @@ require([
         , 'lodash'
         , 'angularUIStates'
         , 'angularTranslate'
-        , 'angularGoogleMaps'
+//        , 'angularGoogleMaps'
 
         , 'application/main/rhMainModule'
         , 'application/home/rhHomeModule'

@@ -1,7 +1,7 @@
 define([
         'angular'
         , './rhHomeRoutes'
-        , './rhMapProvider'
+//        , './rhMapProvider'
         , './rhHomeController'
         , './rhFeaturesController'
         , './rhBookingController'
@@ -19,10 +19,10 @@ define([
         , rhGetThereController
     ) {
 
-        var rhHomeModule = angular.module('rh.home', ['ui.router', 'uiGmapgoogle-maps'] );
+        var rhHomeModule = angular.module('rh.home', ['ui.router']);//, 'uiGmapgoogle-maps'] );
 
         rhHomeModule.config(rhHomeRoutes);
-        rhHomeModule.config(rhMapProvider);
+//        rhHomeModule.config(rhMapProvider);
 
         rhHomeModule.controller('rhHomeController', rhHomeController);
         rhHomeModule.controller('rhFeaturesController', rhFeaturesController);

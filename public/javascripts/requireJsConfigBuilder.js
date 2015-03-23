@@ -8,7 +8,7 @@ var buildRequireConfig = function() {
             , 'lodash': 'lib/lodash/dist/lodash.min'
             , 'angularUIStates': 'lib/angular-ui-router/release/angular-ui-router.min'
             , 'angularTranslate': 'lib/angular-translate/angular-translate.min'
-            , 'angularGoogleMaps': 'lib/angular-google-maps/dist/angular-google-maps.min'
+//            , 'angularGoogleMaps': 'lib/angular-google-maps/dist/angular-google-maps.min'
 
             , 'rhApp': 'application'
         },
@@ -18,8 +18,8 @@ var buildRequireConfig = function() {
                 'exports': 'angular'
             },
             'angularUIStates': ['angular'],
-            'angularTranslate': ['angular'],
-            'angularGoogleMaps': ['angular', 'lodash']
+            'angularTranslate': ['angular']
+//            'angularGoogleMaps': ['angular', 'lodash']
         },
         priority: ['angular'],
         baseUrl : "/assets/javascripts"
