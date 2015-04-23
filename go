@@ -1,1 +1,1 @@
-activator "run 9022"
+sbt -Dconfig.file=./conf/application.conf -Dhttp.port=9022 run

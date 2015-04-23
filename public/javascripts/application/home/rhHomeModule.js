@@ -11,7 +11,7 @@ define([
     function (
         angular
         , rhHomeRoutes
-        , rhMapProvider
+//        , rhMapProvider
         , rhHomeController
         , rhFeaturesController
         , rhBookingController
