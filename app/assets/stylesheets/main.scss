@@ -108,15 +108,31 @@ $primary-color: #333;
     font-family: "Lobster", cursive;
   }
 
-  nav {
-    width: 25%;
+  nav.main-menu {
+    width: 100%;
     float: left;
+
+    ul {
+      display: table;
+      width: 100%;
+      list-style: none;
+
+      //Specific for chrome
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      -webkit-padding-start: 0em;
+
+      li {
+        border-style: solid;
+        border-color: black;
+        border-width: 2px 0px;
+        padding: 1em;
+        background-color: #f6e6b4;
+        font-family: "Lobster", cursive;
+      }
+    }
   }
 
-  section {
-    width: 74%;
-    float: right;
-  }
 
   img {
     width: 5%;
@@ -126,8 +142,11 @@ $primary-color: #333;
     font-family: "Lobster", cursive;
   }
 
+  header {
+    width: 100%;
+  }
+
   footer {
-    background: #f6e6b4;
     font-size: 90%;
   }
 }
@@ -146,16 +165,26 @@ $radius-hd-ft: 0.8em;
 
 header {
   border: $border-hd-ft;
-  padding: 1em;
   border-radius: $radius-hd-ft;
   background: -webkit-linear-gradient(top, white 0%,#f6e6b4 100%);
+
+  h1 {
+    padding: 0.5em;
+  }
+
+  h2 {
+    padding: 0em 1em;
+  }
 }
 
 
 footer {
+  background: #f6e6b4;
   border: $border-hd-ft;
   border-radius: $radius-hd-ft;
   padding: 1em;
+  width: 100%;
+  float: left;
 }
 
 aside.language {
@@ -167,5 +196,61 @@ aside.language {
     float: right;
     list-style: none;
   }
+}
 
+.info {
+  margin: 1em 0em;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #f6e6b4;
+  font-family: "Lobster", cursive;
+  float: left;
+  width: 100%;
+
+    p {
+      margin: 1em;
+    }
+}
+
+.content {
+  width:78%;
+  float:right;
+}
+
+
+nav.home, nav.routes {
+  width: 100%;
+  float: left;
+
+  ul {
+    list-style: none;
+    display: table;
+    width: 100%;
+
+    //Specific for chrome
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-padding-start: 0em;
+
+    li {
+      border: 2px solid black;
+      border-radius: 10px 10px 0px 0px;
+      padding: 1em;
+      background-color: #f6e6b4;
+      font-family: "Lobster", cursive;
+
+      display: table-cell;
+      text-align: center;
+
+      a {
+        display: block;
+      }
+    }
+  }
+}
+
+aside {
+  width: 20%;
+  float: left;
+  margin: 0em 1em 0em 0em;
 }

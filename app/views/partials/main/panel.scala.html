@@ -10,38 +10,44 @@
         </li>
     </ul>
 </aside>
-<nav>
-    <ul>
-        <li id="home">
-            <a data-ng-click="goToHome()" data-translate="menu.0.key"></a>
-            <p data-translate="menu.0.sub_info"></p>
-        </li>
-        <li id="routes">
-            <a data-ng-click="goToRoutes()" data-translate="menu.1.key"></a>
-            <p data-translate="menu.1.sub_info"></p>
-        </li>
-        <li id="comments">
-            <a data-ng-click="goToComments()" data-translate="menu.2.key"></a>
-            <p data-translate="menu.2.sub_info"></p>
-        </li>
-        <li id="contact">
-            <a data-ng-click="goToContactUs()" data-translate="menu.3.key"></a>
-            <p data-translate="menu.3.sub_info"></p>
-        </li>
-    </ul>
-</nav>
+
 <aside>
-    <p>
-        <span>{{ 'contact_info.name' | translate }} "Las Golondrinas"</span>
-        <span>{{ 'contact_info.address' | translate }}</span>
-        <span>{{ 'contact_info.postal_code' | translate }}</span>
-        <span>{{ 'contact_info.location' | translate }}</span>
-        <span>{{ 'contact_info.phones' | translate }}</span>
-    <p/>
-    <ul>
-        <li>ES: (+34) 629140953</li>
-        <li>UK: (+44) 7412913632</li>
-    </ul>
+    <nav class="main-menu">
+        <ul>
+            <li id="home">
+                <a data-ng-click="goToHome()" data-translate="menu.0.key"></a>
+                <p data-translate="menu.0.sub_info"></p>
+            </li>
+            <li id="routes">
+                <a data-ng-click="goToRoutes()" data-translate="menu.1.key"></a>
+                <p data-translate="menu.1.sub_info"></p>
+            </li>
+            <li id="comments">
+                <a data-ng-click="goToComments()" data-translate="menu.2.key"></a>
+                <p data-translate="menu.2.sub_info"></p>
+            </li>
+            <li id="contact">
+                <a data-ng-click="goToContactUs()" data-translate="menu.3.key"></a>
+                <p data-translate="menu.3.sub_info"></p>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="info">
+        <p>
+            <span>{{ 'contact_info.name' | translate }} "Las Golondrinas"</span>
+            <span>{{ 'contact_info.address' | translate }}</span>
+            <span>{{ 'contact_info.postal_code' | translate }}</span>
+            <span>{{ 'contact_info.location' | translate }}</span>
+            <span>{{ 'contact_info.phones' | translate }}</span>
+        <p/>
+        <ul>
+            <li>ES: (+34) 629140953</li>
+            <li>UK: (+44) 7412913632</li>
+        </ul>
+    </section>
 </aside>
 
-<div ui-view></div>
+
+<div class="content" ui-view></div>
+
