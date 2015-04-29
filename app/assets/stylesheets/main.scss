@@ -1,0 +1,171 @@
+$font-stack-size: 100%;
+$primary-color: #333;
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /* Styles */
+  body {
+    font-size: $font-stack-size;
+  }
+
+  footer {
+    float: left;
+    width: 100%;
+    padding: 1em 0em;
+    font-size: 75%;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+  body {
+    font-size: $font-stack-size;
+  }
+
+  img {
+    width: 8%;
+  }
+
+  .location, #geoLocation {
+    font-size: 70%;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  body {
+    font-size: $font-stack-size;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .location, #geoLocation {
+    font-size: 70%;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  footer {
+    float: left;
+    width: 100%;
+    padding: 1em 0em;
+    font-size: 90%;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+
+  body {
+    font-size: $font-stack-size;
+    width: 960px;
+    margin: 20px auto 100px auto;
+  }
+
+  nav {
+    width: 25%;
+    float: left;
+  }
+
+  section {
+    width: 74%;
+    float: right;
+  }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+  img {
+    width: 5%;
+  }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+  body {
+    width: 960px;
+    margin: 20px auto 100px auto;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-family: "Lobster", cursive;
+  }
+
+  nav {
+    width: 25%;
+    float: left;
+  }
+
+  section {
+    width: 74%;
+    float: right;
+  }
+
+  img {
+    width: 5%;
+  }
+
+  #documentation {
+    font-family: "Lobster", cursive;
+  }
+
+  footer {
+    background: #f6e6b4;
+    font-size: 90%;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+  img {
+    width: 5%;
+  }
+}
+
+
+$border-hd-ft: 0.2em solid black;
+$radius-hd-ft: 0.8em;
+
+header {
+  border: $border-hd-ft;
+  padding: 1em;
+  border-radius: $radius-hd-ft;
+  background: -webkit-linear-gradient(top, white 0%,#f6e6b4 100%);
+}
+
+
+footer {
+  border: $border-hd-ft;
+  border-radius: $radius-hd-ft;
+  padding: 1em;
+}
+
+aside.language {
+  width:100%;
+  float: left;
+
+  ul {
+    width: 100%;
+    float: right;
+    list-style: none;
+  }
+
+}

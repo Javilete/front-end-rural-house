@@ -7,6 +7,7 @@
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>@title</title>
+        <link rel="stylesheet" media="screen" href='@routes.Assets.at("/public/stylesheets", "main.css")'>
         <!--<script src='@routes.Assets.at("/public/javascripts" , "requireJsConfigBuilder.js")'></script>-->
         <base href="/">
     </head>
@@ -20,7 +21,7 @@
 
             @content
         <footer>
-            @@ 2014 by <a href="http://javierrubiolarred.blogspot.co.uk/">Javier Rubio Larred</a>. All Rights Reserved.
+            @@ 2015 by <a href="http://javierrubiolarred.blogspot.co.uk/">Javier Rubio Larred</a>. All Rights Reserved.
         </footer>
         <script src='@routes.Assets.at("/public/javascripts", "requireJsConfigBuilder.js")'></script>
         <script data-main='@routes.Assets.at("/public/javascripts", "main")' src='@routes.Assets.at("/public/javascripts", "lib/requirejs/require.js")'></script>
