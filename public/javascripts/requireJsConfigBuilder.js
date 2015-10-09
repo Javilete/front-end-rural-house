@@ -8,6 +8,8 @@ var buildRequireConfig = function() {
             , 'lodash': 'lib/lodash/dist/lodash.min'
             , 'angularUIStates': 'lib/angular-ui-router/release/angular-ui-router.min'
             , 'angularTranslate': 'lib/angular-translate/angular-translate.min'
+            , 'restangular': 'lib/restangular/dist/restangular.min'
+            , 'moment': 'lib/moment/min/moment.min'
 //            , 'angularGoogleMaps': 'lib/angular-google-maps/dist/angular-google-maps.min'
 
             , 'rhApp': 'application'
@@ -18,7 +20,8 @@ var buildRequireConfig = function() {
                 'exports': 'angular'
             },
             'angularUIStates': ['angular'],
-            'angularTranslate': ['angular']
+            'angularTranslate': ['angular'],
+            'restangular': ['angular', 'lodash']
 //            'angularGoogleMaps': ['angular', 'lodash']
         },
         priority: ['angular'],

@@ -7,6 +7,7 @@ define([
         , './rhBookingController'
         , './rhPicturesController'
         , './rhGetThereController'
+        , './rhBookingService'
     ],
     function (
         angular
@@ -17,6 +18,7 @@ define([
         , rhBookingController
         , rhPicturesController
         , rhGetThereController
+        , rhBookingService
     ) {
 
         var rhHomeModule = angular.module('rh.home', ['ui.router']);//, 'uiGmapgoogle-maps'] );
@@ -29,6 +31,8 @@ define([
         rhHomeModule.controller('rhBookingController', rhBookingController);
         rhHomeModule.controller('rhPicturesController', rhPicturesController);
         rhHomeModule.controller('rhGetThereController', rhGetThereController);
+
+        rhHomeModule.factory('rhBookingService', rhBookingService);
 
         return rhHomeModule;
     }

@@ -1,10 +1,10 @@
-define(
-    [
+define(['moment'],
+    function (moment){
 
-    ],
-    function (){
+        var rhBookingController = function($scope, rhBookingService) {
 
-        var rhBookingController = function($scope) {
+            $scope.arrivalDate = moment().toDate();
+            $scope.departureDate = moment().add(1, 'days').toDate();
 
             $scope.guests = [
                 {name: 'one', value: 1},
@@ -22,13 +22,19 @@ define(
             ];
 
             $scope.find = function() {
-                console.log("Arrival: " + $scope.arrivalDate);
-                console.log("Departing: " + $scope.arrivalDate);
+                rhBookingService.getAvailability($scope.arrivalDate, $scope.departureDate, $scope.guestsNumber.value).then(
+                    function (availabilityList){
+                        $scope.availability = availabilityList;
+                    },
+                    function () {
+                        $scope.serverError = true;
+                    }
+                );
             }
 
         }
 
-        rhBookingController.$inject = ['$scope'];
+        rhBookingController.$inject = ['$scope', 'rhBookingService'];
 
         return rhBookingController;
     }

@@ -6,6 +6,8 @@ require([
         , 'lodash'
         , 'angularUIStates'
         , 'angularTranslate'
+        , 'restangular'
+        , 'moment'
 //        , 'angularGoogleMaps'
 
         , 'application/main/rhMainModule'

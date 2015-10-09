@@ -2,27 +2,47 @@
 
 <h2>{{ 'menu.0.sub_menu.2.key' | translate }}</h2>
 <div>
-    <form name="booking">
-
+    <form name="booking" novalidate>
         <label>
             {{ 'menu.0.sub_menu.2.arrival_date' | translate}}
-            <input id="arrivalDate" type="date" name="arrivalDate" data-ng-model="arrivalDate" />
+            <input id="arrivalDate" type="date" name="arrivalDate" data-ng-model="arrivalDate" required />
         </label>
+        <div>
+            <span class="error" data-ng-show="booking.arrivalDate.$error.required">
+                Tell us about your date
+            </span>
+            <span class="error" data-ng-show="booking.arrivalDate.$error.date">
+                The date you have entered is not valid
+            </span>
+        </div>
+
 
         <label>
             {{ 'menu.0.sub_menu.2.departure_date' | translate}}
-            <input id="departureDate" type="date" name="departureDate" data-ng-model="departureDate" />
+            <input id="departureDate" type="date" name="departureDate" data-ng-model="departureDate" required />
         </label>
+        <div>
+            <span class="error" data-ng-show="booking.departureDate.$error.required">
+                Tell us about your date
+            </span>
+            <span class="error" data-ng-show="booking.departureDate.$error.date">
+                The date you have entered is not valid
+            </span>
+        </div>
 
         <label for="guests">
             {{ 'menu.0.sub_menu.2.guests' | translate}}
         </label>
-
-        <select id="guests" name="guests" data-ng-model="guestNumber" data-ng-options="guest.value for guest in guests">
+        <select id="guests" name="guests" data-ng-model="guestsNumber" data-ng-options="guest.value for guest in guests">
             <option value="">-- {{ 'menu.0.sub_menu.2.guests' | translate | lowercase}} --</option>
         </select>
+        <div data-ng-show="booking.guestsNumber.$error.required">Tell us your arrival date</div>
 
         <button id="findButton" data-ng-click="find()">{{ 'menu.0.sub_menu.2.find_button' | translate}}</button>
     </form>
+
+    <div data-ng-if="availability">
+        {{availability}}
+    </div>
 
 </div>
